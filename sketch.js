@@ -21,7 +21,7 @@ function setup() {
     world = engine.world;
     ground = new Ground(400,390,800,20);
     canon = new Tanker(-55,335,100,100);
-    shooter = new Frount(-25,300,50,20);
+    shooter = new TankerHead(-28,300,50,20);
     con = new Chain(canon.body,shooter.body);
 }
 
@@ -29,15 +29,17 @@ function draw() {
     background(0);
     Engine.update(engine);
     ground.display();
-console.log(shooter.body.position.x);
+console.log(shooter.body.position.y);
     
     canon.move();
     canon.display();
+        
     shooter.move();
     shooter.display();
     con.display();
     strokeWeight(5);
     line(canon.body.position.x,canon.body.position.y,shooter.body.position.x,shooter.body.position.y);
+   
 // Remember to update the Matter Engine and set the background.
 }
 
