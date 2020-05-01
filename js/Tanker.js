@@ -20,8 +20,6 @@ class Tanker {
     }
     display(){
       var pos = this.body.position;
-      // Draw the tanker the way you like.
-      // You could also use an image if you want a specific look
       imageMode(CENTER);
       image(this.image, pos.x, pos.y, this.width, this.height);
     };
