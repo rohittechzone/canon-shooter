@@ -47,7 +47,7 @@ function draw() {
     canonball.display();
     shooter.move();
     shooter.display();
-    //shoot.display();
+    shoot.display();
     if (keyIsDown(32)) {
         shoot.attach(canonball.body)
     }
