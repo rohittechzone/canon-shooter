@@ -55,7 +55,7 @@ function draw() {
     strokeWeight(20);
     stroke(255);
    // line(canonball.body.position.x,canonball.body.position.y,shooter.body.position.x+50,shooter.body.position.y);
-    line(canonball.body.position.x,canonball.body.position.y,launchX-100 ,launchY+30);
+    //line(canonball.body.position.x,canonball.body.position.y,launchX-100 ,launchY+30);
 }
 
 
